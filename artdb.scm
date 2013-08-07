@@ -21,7 +21,6 @@
       (web-error "Database already exists."))
   (let ((conn (open-database filename)))
     (as:setup-db
-      'sqlite3
       conn
       '((default-type: text)
         (artists
